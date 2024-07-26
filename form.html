@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background-color: orange;
+      border-radius: 5px;
+      padding: 0px;
+      width: 426px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #333;
+      background-color: orange;
+    }
+
+    form{
+      background-color: rgb(8, 8, 82);
+      color: yellow;
+      padding-left: 30px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select {
+      width: 80%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .sub{
+      background-color: orange;
+      padding-left: 50%;
+      margin-left: -30px;
+    }
+
+    #dob-day{
+      width: 30%;
+    }
+
+    #dob-month{
+      width: 30%;
+    }
+
+    #dob-year{
+      width: 30%;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .cancelBtn {
+      background-color: #f44336;
+    }
+
+    .cancelBtn:hover {
+      background-color: #da3b33;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Sign Up</h1>
+    <form>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" placeholder="Enter First Name" required>
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" placeholder="Enter Last Name" required>
+
+      <label for="dob">Date of Birth:</label>
+      <select id="dob-day" name="dob-day">
+        <option value="">Date</option>
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option>
+        <option value="">4</option>
+        <option value="">5</option>
+        <option value="">6</option>
+        <option value="">7</option>
+        <option value="">8</option>
+        <option value="">9</option>
+        <option value="">10</option>
+      </select>
+      <select id="dob-month" name="dob-month">
+        <option value="">Month</option>
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option>
+        <option value="">4</option>
+        <option value="">5</option>
+        <option value="">6</option>
+        <option value="">7</option>
+        <option value="">8</option>
+        <option value="">9</option>
+        <option value="">10</option>
+        <option value="">11</option>
+        <option value="">12</option>
+      </select>
+      <select id="dob-year" name="dob-year">
+        <option value="">Year</option>
+        <option value="">2000</option>
+        <option value="">2001</option>
+        <option value="">2002</option>
+        <option value="">2003</option>
+        <option value="">2004</option>
+        <option value="">2005</option>
+      </select>
+
+      <label for="gender">Gender:</label>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+
+      <label for="country">Country:</label>
+      <select id="country" name="country">
+        <option value="">Country</option>
+        <option value="">India</option>
+        <option value="">America</option>
+      </select>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" placeholder="Enter E-mail" required>
+
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" name="phone" placeholder="Enter Phone" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter Password" required>
+
+      <label for="confirm-password">Confirm Password:</label>
+      <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+
+      <input type="checkbox" id="terms" name="terms" required>
+      <label for="terms">I Agree to the Terms of use</label>
+      <div class="sub">
+        <button type="submit">Submit</button>
+        <button type="button" class="cancelBtn">Cancel</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

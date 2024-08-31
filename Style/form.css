@@ -96,3 +96,12 @@ button:hover {
 #female {
   display: inline;
 }
+
+.error{
+  color: red;
+}
+
+.focus{
+  border: 1px solid red;
+  background-color: antiquewhite;
+}

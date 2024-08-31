@@ -8,13 +8,15 @@
 
 <body>
   <div class="container">
-    <h1>Sign Up</h1>
-    <form onsubmit="alert('Successfull Regestration')">
+  <h1>Sign Up</h1>
+    <form action="chess.html" onsubmit="return validate();">
       <label for="firstName">First Name:</label>
-      <input type="text" id="firstName" name="firstName" placeholder="Enter First Name" required>
+      <input type="text" id="firstName" name="firstName" placeholder="Enter First Name">
+      <p id="firstNameError" class="error"></p>
 
       <label for="lastName">Last Name:</label>
-      <input type="text" id="lastName" name="lastName" placeholder="Enter Last Name" required>
+      <input type="text" id="lastName" name="lastName" placeholder="Enter Last Name">
+      <p id="lastNameError" class="error"></p>
 
       <label for="dob">Date of Birth:</label>
       <select id="dob-day" name="dob-day">
@@ -54,6 +56,7 @@
         <option value="">2004</option>
         <option value="">2005</option>
       </select>
+      <p id="dobError" class="error"></p>
 
       <label for="gender">Gender:</label>
       <input type="radio" id="male" name="gender" value="male">
@@ -67,23 +70,26 @@
         <option value="">India</option>
         <option value="">America</option>
       </select>
+      <p id="countryError" class="error"></p>
 
       <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" placeholder="Enter E-mail" required>
+      <input type="email" id="email" name="email" placeholder="Enter E-mail">
+      <p id="emailError" class="error"></p>
 
       <label for="phone">Phone:</label>
-      <input type="text" id="phone" name="phone" placeholder="Enter Phone" required>
+      <input type="text" id="phone" name="phone" placeholder="Enter Phone">
+      <p id="phoneError" class="error"></p>
 
       <label for="password">Password:</label>
-      <input type="password" id="password" name="password" placeholder="Enter Password" required>
+      <input type="password" id="password" name="password" placeholder="Enter Password">
 
       <label for="confirm-password">Confirm Password:</label>
-      <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+      <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password">
 
       <input type="checkbox" id="terms" name="terms" required>
       <label for="terms">I Agree to the Terms of use</label>
       <div class="sub">
-        <button type="submit">Submit</button>
+        <button type="submit" id="submitbtn" value="Register">Submit</button>
         <button type="button" class="cancelBtn">Cancel</button>
       </div>
     </form>
